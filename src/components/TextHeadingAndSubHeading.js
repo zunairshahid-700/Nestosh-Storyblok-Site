@@ -1,10 +1,6 @@
 import React from 'react';
 import { storyblokEditable } from '@storyblok/react';
-// import './styles/TextAndImage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import GlobalImage from './globalComponents/GlobalImage';
-
-// import MarkdownRenderer from './helperComponents/MarkdownRenderer';
 
 const TextHeadingAndSubHeading = ({ blok }) => {
     

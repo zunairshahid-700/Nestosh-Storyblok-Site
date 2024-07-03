@@ -15,7 +15,7 @@ const HeroSection = ({ blok }) => {
             <h1 className="annBarHeading">
             {blok.mainHeading}
             </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, perferendis odit natus ab architecto incidunt accusantium iste aut esse doloremque commodi eum, inventore molestias illum modi, alias voluptas nostrum molestiae.</p>
+            <p>{blok.subHeading}</p>
         </div>
         <div className="rightSection markdown-body text-center">
           <MarkdownRenderer markdown={blok.additionalText.html} />

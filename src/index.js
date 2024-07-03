@@ -14,6 +14,8 @@ import HeroSection from "./components/HeroSection";
 import TextAndImage from "./components/TextAndImage";
 import TextHeadingAndSubHeading from './components/TextHeadingAndSubHeading';
 import TextAndImageBlock from './components/TextAndImageBlock';
+import Services from "./components/Services";
+import ServicesBlocks from "./components/ServicesBlocks";
 
 storyblokInit({
   accessToken: "62wiGQO1wlQ8aYp58nPybwtt",
@@ -25,6 +27,8 @@ storyblokInit({
     TextAndImage: TextAndImage,
     TextHeadingAndSubHeading: TextHeadingAndSubHeading,
     TextAndImageBlock: TextAndImageBlock,
+    Services: Services,
+    ServicesBlocks: ServicesBlocks,
     page: Page,
     teaser: Teaser,
     grid: Grid,

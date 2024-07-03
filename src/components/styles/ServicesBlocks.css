@@ -1,0 +1,8 @@
+.ServicesBlocksContent{
+    display: flex;
+    /* grid-template-columns: 33% 33% 33%; */
+    flex-direction: row;
+}
+img.ServicesBlockSImages{
+    width: 100px;
+}
