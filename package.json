@@ -1,0 +1,46 @@
+{
+  "name": "storyblok-react-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.18",
+    "@storyblok/react": "^2.0.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "he": "^1.2.0",
+    "local-ssl-proxy": "^2.0.5",
+    "marked": "^12.0.2",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "proxy": "local-ssl-proxy --source 3020 --target 3000 --cert localhost.pem --key localhost-key.pem"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

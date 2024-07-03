@@ -1,0 +1,8 @@
+.announcementBar{
+    background-color: #C34433;
+    color: #fff;
+    padding: 20px;
+}
+.announcementBar .annBarHeading{
+    text-align: center;
+}

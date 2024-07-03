@@ -1,0 +1,41 @@
+.header {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.header ul li{
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* .header ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .header ul ul {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .header li {
+    margin: 5px 0;
+  }
+  
+  .headerLogo img {
+    max-width: 100px;
+    height: auto;
+  } */
