@@ -1,15 +1,23 @@
 import React from 'react';
 import { storyblokEditable } from '@storyblok/react';
 import './styles/heroSection.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import  'bootstrap/dist/css/bootstrap.min.css';
+import bgImage from '../Images/banner-bg.png'
 
 import MarkdownRenderer from './helperComponents/MarkdownRenderer';
 
 const HeroSection = ({ blok }) => {
   console.log(blok.additionalText.html);
+  const backgroundImage = bgImage ;
+  const backgroundStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  };
 
   return (
-    <div {...storyblokEditable(blok)} className="heroSection">
+    <div {...storyblokEditable(blok)} className="heroSection" style={backgroundStyle} >
       <div className="HeroSectionWrap">
         <div className="leftSection text-center mx-5">
             <h1 className="annBarHeading">

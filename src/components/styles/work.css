@@ -14,11 +14,12 @@
     padding: 0 80px;
   }
   .ourwork_sec_row.row {
+    display: flex;
     flex-wrap: wrap;
     background: #fbfbfb;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    padding: 0 0 80px;
+    margin-left: calc(-50vw + 50%) !important;
+    margin: 0 0 80px;
   }
   .icon_column {
     border: 1px solid #ededed;

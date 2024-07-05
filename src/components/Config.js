@@ -1,6 +1,6 @@
 import React from 'react';
 import { storyblokEditable } from '@storyblok/react';
-import Header from './Header';
+import Header from './globalComponents/Header';
 
 const Config = ({ blok }) => {
   // const logoImage = blok.logo?.filename || '';
