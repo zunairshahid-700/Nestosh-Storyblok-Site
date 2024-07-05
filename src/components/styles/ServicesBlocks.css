@@ -1,8 +1,59 @@
-.ServicesBlocksContent{
-    display: flex;
-    /* grid-template-columns: 33% 33% 33%; */
-    flex-direction: row;
+.img_fluid{
+  width: 100%;
 }
-img.ServicesBlockSImages{
-    width: 100px;
+.img_bg{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.services_sec {
+  text-align: center;
+  padding: 40px 0;
+}
+.services_sec h3 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+.services_sec p {
+  font-size: 28px;
+  margin: 0 50px 70px;
+  padding: 0 80px;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 -15px;
+}
+.column {
+  flex: 1 0 28%;
+  background-color: #5a6d79;
+  border-radius: 60px;
+  padding: 110px 25px 80px !important;
+  margin: 0 15px;
+}
+.column:hover {
+  background-color: #072e46;
+}
+.services_sec .column img {
+  max-width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+.services_sec .column p {
+  font-size: 46px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 70px;
+  padding: 0;
+  line-height: normal;
 }
