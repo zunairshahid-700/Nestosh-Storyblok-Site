@@ -16,6 +16,8 @@ import TextHeadingAndSubHeading from './components/TextHeadingAndSubHeading';
 import TextAndImageBlock from './components/TextAndImageBlock';
 import Services from "./components/Services";
 import ServicesBlocks from "./components/ServicesBlocks";
+import Work from "./components/Work";
+import WorkImages from "./components/WorkImages";
 
 storyblokInit({
   accessToken: "62wiGQO1wlQ8aYp58nPybwtt",
@@ -29,6 +31,8 @@ storyblokInit({
     TextAndImageBlock: TextAndImageBlock,
     Services: Services,
     ServicesBlocks: ServicesBlocks,
+    Work: Work,
+    WorkImages: WorkImages,
     page: Page,
     teaser: Teaser,
     grid: Grid,

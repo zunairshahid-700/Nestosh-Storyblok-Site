@@ -1,5 +1,4 @@
 import React from 'react';
-// import { storyblokEditable } from '@storyblok/react';
 import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 import './styles/ServicesBlocks.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,20 +6,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Services = ({ blok }) => {
      
   return (
-    <div {...storyblokEditable(blok)} className="Services">
-      <div className="ServicesWrap">
-        <div className="ServicesContent">
-            <h1>{blok.Heading}</h1>
+    <div {...storyblokEditable(blok)} className="services_sec Services main container">
+        <div className="inner_container">
+            <h3>{blok.Heading}</h3>
             <p>{blok.SubHeading}</p>
         </div>
-        <div className="ServicesBlocksContent">
+        <div className="ServicesBlocksContent services_sec_row row">
         {blok.ServicesBlocks.map((blok) => (
             <StoryblokComponent blok={blok} key={blok._uid} />
         ))}
         </div>
-
-      </div>
     </div>
+ 
+
   );
 };
 
