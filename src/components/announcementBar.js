@@ -5,13 +5,13 @@ import "./styles/announcementBar.css";
 const AnnouncementBar = ({ blok }) => {
 
   return (
-    <div {...storyblokEditable(blok)} className="announcementBar">
-      <div className="annBarWrap">
-        <p className="annBarHeading">
-            {blok.Text}
-        </p>
-      </div>
-    </div>
+    <section {...storyblokEditable(blok)} class="c-bar">
+        <div class="container-fluid">
+            <div class="c-bar__wrap">
+                <p class="c-bar__wrap__text"> {blok.Text}</p>
+            </div>
+        </div>
+    </section>
   );
 };
 

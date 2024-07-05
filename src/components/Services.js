@@ -7,7 +7,7 @@ const Services = ({ blok }) => {
      
   return (
     <div {...storyblokEditable(blok)} className="services_sec Services main container">
-        <div className="inner_container">
+        <div className="services_sec inner_container">
             <h3>{blok.Heading}</h3>
             <p>{blok.SubHeading}</p>
         </div>

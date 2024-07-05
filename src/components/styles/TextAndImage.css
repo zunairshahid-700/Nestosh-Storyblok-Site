@@ -1,44 +1,105 @@
-/* .TextAndImageWrap {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 400px;
-    align-items: center;
-} */
+.c-intro__header {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 60px 0;
+  text-align: center;
+}
 
-.textAndImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+.c-intro__header__text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.c-intro__heading__text {
+  color: #1b1b1b;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .c-intro__heading__text {
+      font-size: 18px;
   }
-  
-  .TextAndImageWrap {
-    display: flex;
-    align-items: center;
-    width: 100%;
+}
+
+.c-intro__heading__name {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .c-intro__heading__name {
+      font-size: 16px;
+      margin-bottom: 20px;
   }
-  
-  .image-left .leftSection {
-    order: 1;
+}
+
+.c-intro__heading__name::after {
+  content: "";
+  background-color: #f9a13b;
+  display: block;
+  height: 2px;
+  margin-bottom: -15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+}
+
+.c-intro__content {
+  margin: 60px 0;
+}
+
+.c-intro__content__wrap {
+  margin: 60px 0;
+}
+
+.c-intro__content__wrap:last-child {
+  margin-bottom: 0;
+}
+
+.c-intro__content__img-holder {
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 40px;
+  display: flex;
+  height: 328px;
+  justify-content: center;
+  max-height: 328px;
+  padding: 30px;
+  text-align: center;
+}
+
+.c-intro__content__img {
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  object-fit: contain;
+
+}
+
+@media only screen and (max-width: 991px) {
+  .c-intro__content__img {
+      height: auto;
   }
-  
-  .image-left .rightSection {
-    order: 2;
-  }
-  
-  .image-right .leftSection {
-    order: 2;
-  }
-  
-  .image-right .rightSection {
-    order: 1;
-  }
-  
-  .leftSection {
-    flex: 1;
-  }
-  
-  .rightSection {
-    flex: 2;
-    padding: 1rem;
-  }
+}
+.c-intro__content__text {
+  color: #606060;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.c-intro__content__link {
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.c-intro__content__link:hover {
+  color: #f9a13b;
+}

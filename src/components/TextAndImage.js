@@ -1,44 +1,40 @@
 import React from 'react';
 import { storyblokEditable } from '@storyblok/react';
-import './styles/TextAndImage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import GlobalImage from './globalComponents/GlobalImage';
+import './styles/TextAndImage.css';
+// import GlobalImage from './globalComponents/GlobalImage';
 
 const TextAndImage = ({ blok }) => {
     const image = blok.Image?.filename || '';
     const isImageOnRight = blok.ImageOnRight;
      
   return (
-    <div {...storyblokEditable(blok)} className="textAndImage">
-      <div className="TextAndImageWrap">
+    <div {...storyblokEditable(blok)} className="textAndImage c-intro__content__wrap">
+      <div className="TextAndImageWrap row justify-content-center align-items-center">
 
       {!isImageOnRight && (
-          <div className="leftSection text-center mx-5">
-            <GlobalImage
-              src={image}
-              alt="Example Image"
-              width="400"
-              height="auto"
-              className="global-image m-auto"
-            />
+          <div className="col-12 col-md-7">
+            <div className="c-intro__content__img-holder">
+              <img className="c-intro__content__img" src={image} alt={blok.Heading} />
+            </div>
           </div>
         )}
-        <div className="rightSection text-center w-75">
-          <h1>{blok.Heading}</h1>
-          <p>{blok.Description}</p>
+        <div className="col-12 col-md-5">
+          <div className="c-intro__content__text-holder">
+            <h3 className="c-intro__content__text-holder__heading">{blok.Heading}</h3>
+            <p className="c-intro__content__text">
+              {blok.Description}
+            </p>
+          </div>
         </div>
         {isImageOnRight && (
-          <div className="leftSection text-center mx-5">
-            <GlobalImage
-              src={image}
-              alt="Example Image"
-              width="400"
-              height="auto"
-              className="global-image m-auto"
-            />
+          <div className="col-12 col-md-7">
+            <div className="c-intro__content__img-holder">
+              <img className="c-intro__content__img" src={image} alt={blok.Heading} />
+            </div>
           </div>
         )}
-
+        
       </div>
     </div>
   );
