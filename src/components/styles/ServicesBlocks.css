@@ -1,56 +1,66 @@
-.img_fluid{
+.img_fluid {
     width: 100%;
-  }
-  .img_bg{
+}
+
+.img_bg {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .container{
+}
+
+.container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  .services_sec {
+}
+
+.services_sec {
     text-align: center;
     padding: 40px 0;
-  }
-  .services_sec h3 {
+}
+
+.services_sec h3 {
     font-size: 80px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 20px;
-  }
-  .services_sec p {
+}
+
+.services_sec p {
     font-size: 28px;
     margin: 0 50px 70px;
     padding: 0 80px;
-  }
-  .services_sec .row {
+}
+
+.services_sec .row {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     margin: 0 -15px;
-  }
-  .services_sec .column {
+}
+
+.services_sec .column {
     flex: 1 0 28%;
     background-color: #5a6d79;
     border-radius: 60px;
     padding: 70px 25px 50px !important;
     margin: 0 15px;
     height: 500px;
-  }
-  .services_sec .column:hover {
+}
+
+.services_sec .column:hover {
     background-color: #3d80a7;
     background-image: none !important;
-  }
-  .services_sec .column img {
+}
+
+.services_sec .column img {
     max-width: 180px;
-    height: 180px;
+    /* height: 180px; */
     object-fit: contain;
-  }
-  .services_sec .column p {
+}
+
+.services_sec .column p {
     font-size: 36px;
     color: #fff;
     text-transform: uppercase;
@@ -58,48 +68,100 @@
     margin: 0 0 40px;
     padding: 0;
     line-height: normal;
-  }
-  .services_sec .column .hover_txt {
+}
+
+.services_sec .column .hover_txt {
     display: none;
     font-size: 16px;
     margin: 0;
     text-transform: capitalize;
-  }
-  .services_sec .column:hover img {
-    display: none;
-  }
-  .services_sec .column:hover .hover_txt {
-    display: block;
-  }
-
-  
-@media only screen and (max-width: 767px) {
-    .services_sec h3,.ourwork_sec h3 {
-      font-size: 44px;
-    }
-    .services_sec p,.ourwork_sec p {
-      font-size: 20px;
-      margin: 0 0 30px;
-      padding: 0;
-  }
-  .services_sec .row {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .services_sec .column {
-    flex: 1 1 100%;
-    padding: 30px 25px 30px !important;
-    margin: 0 15px 20px;
-    height: 240px;
-  }
-  .services_sec .column img {
-    max-width: 120px;
-    height: 120px;
-    margin: 40px 0 0;
-  }
-  .services_sec .column p {
-    font-size: 22px;
-    margin: 0 0 20px;
-  }
 }
+
+.services_sec .column:hover img {
+    display: none;
+}
+
+.services_sec .column:hover .hover_txt {
+    display: block;
+}
+/* ServicesBlocks.css */
+/* .services_sec {
+    padding: 20px 0;
+  }
   
+  .services_sec .inner_container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ServicesBlocksContent {
+    position: relative;
+  } */
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-dots li button:before {
+    color: #000; /* Change to your preferred color */
+  }
+  
+  .slick-prev, .slick-next {
+    color: #000; /* Change to your preferred color */
+  }
+  
+  @media (min-width: 768px) {
+    .slick-slider {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .ServicesBlocksContent {
+      display: block;
+    }
+  }
+  
+
+@media only screen and (max-width: 767px) {
+
+    .services_sec h3,
+    .ourwork_sec h3 {
+        font-size: 44px;
+    }
+
+    .services_sec p,
+    .ourwork_sec p {
+        font-size: 20px;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+
+    .services_sec .row {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .services_sec .column {
+        flex: 1 1 100%;
+        padding: 30px 25px 30px !important;
+        margin: 0 15px 20px;
+        height: 450px;
+    }
+
+    .services_sec .column img {
+        max-width: 250px;
+        /* height: 120px; */
+        margin: 40px auto 0;
+    }
+
+    .services_sec .column p {
+        font-size: 35px;
+        margin: 0 0 20px;
+    }
+    .services_sec {
+        padding: 0 0 40px 0;
+    }
+}

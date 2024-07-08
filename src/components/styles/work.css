@@ -45,4 +45,29 @@
     text-transform: uppercase;
     font-weight: 300;
   }
-  
+  @media only screen and (max-width: 767px) {
+    .ourwork_sec h3 {
+        font-size: 44px;
+    }
+    .ourwork_sec p {
+        font-size: 17px;
+        margin: 0 0px 70px;
+        padding: 0 20px;
+    }
+    .icon_column {
+        flex: 1 1 47%;
+      }
+      .icon_column img {
+        max-width: 150px;
+        padding: 25px 25px;
+      }
+      .ourwork_sec .button {
+        padding: 12px 30px;
+      }
+      .ourwork_sec .button a {
+        font-size: 14px;
+      }
+      .ourwork_sec_row.row {
+        margin: 0 0 50px;
+      }
+  }

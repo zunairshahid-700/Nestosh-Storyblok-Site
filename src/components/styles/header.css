@@ -43,15 +43,13 @@
   .c-site-header__logo {
       max-width: 150px;
   }
+  .c-site-header__navbar {
+    background-color: #FFFFFF;
+    padding: 90px 0 60px;
+  }
 }
 .c-site-header__navbar {
   background-color: #fff;
-}
-@media only screen and (min-width: 992px) {
-  .c-site-header__navbar {
-      background-color: #FFFFFF;
-      padding: 90px 0 60px;
-  }
 }
 @media only screen and (max-width: 991.98px) {
   .navbar-nav {
@@ -87,7 +85,7 @@
   font-weight: 400;
   padding: 16px 0;
 }
-@media only screen and (max-width: 991.98px) {
+@media only screen and (max-width: 992px) {
   .c-site-header__navbar .nav-item .nav-link {
       color: white;
       font-size: 26px;
@@ -218,14 +216,46 @@
 .c-site-header .dropdown:hover>.dropdown-menu {
   display: block;
 }
-@media only screen and (max-width: 991.98px) {
+.btn-close {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+.btn-close-custom {
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1051; /* Ensures it's above the navbar */
+  cursor: pointer;
+}
+
+.btn-close-custom:focus {
+  outline: none;
+}
+
+/* Transition for the collapse */
+.collapse {
+  transition: height 0.3s ease;
+}
+
+
+@media only screen and (max-width: 991px) {
   .navbar-collapse {
       background: #3D80A7;
       position: absolute;
       top: 0;
       left: 0;
-      width: 75%;
+      width: 85%;
+      height: 100vh;
+      transition: 0.4s;
   }
+ .c-bar__wrap .c-bar__wrap__text {
+    font-size: 14px;
+}
 }
 @media only screen and (max-width: 991.98px) {
   .navbar>.container {
