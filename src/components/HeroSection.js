@@ -11,21 +11,21 @@ const HeroSection = ({ blok }) => {
   const backgroundImage = bgImage ;
   const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'contain',
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat'
   };
 
   return (
     <div {...storyblokEditable(blok)} className="heroSection" style={backgroundStyle} >
-      <div className="HeroSectionWrap">
-        <div className="leftSection text-center mx-5">
+      <div className="HeroSectionWrap container">
+        <div className="leftSection">
             <h1 className="annBarHeading">
             {blok.mainHeading}
             </h1>
             <p>{blok.subHeading}</p>
         </div>
-        <div className="rightSection markdown-body text-center">
+        <div className="rightSection markdown-body text-center ">
           <MarkdownRenderer markdown={blok.additionalText.html} />
         </div>
       </div>

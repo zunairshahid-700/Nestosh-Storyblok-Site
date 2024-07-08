@@ -19,7 +19,7 @@ const TextAndImage = ({ blok }) => {
             </div>
           </div>
         )}
-        <div className="col-12 col-md-5">
+        <div className={`col-12 col-md-5 ${isImageOnRight ? 'order-section' : ''}`}>
           <div className="c-intro__content__text-holder">
             <h3 className="c-intro__content__text-holder__heading">{blok.Heading}</h3>
             <p className="c-intro__content__text">

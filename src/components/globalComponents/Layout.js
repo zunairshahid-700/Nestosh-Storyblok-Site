@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import logoImage from './../../Images/nestosh-logo.png';
 import megamenuImage from './../../Images/Rectangle.png';
+import hamburger from './../../Images/hamburger-icon.png'
 
 const Layout = ({ children }) => {
   const logo = logoImage;
@@ -9,8 +10,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header logo={logo} megamenuImage={megamenuImage} />
+      <Header logo={logo} megamenuImage={megamenuImage} hamburger={hamburger} />
       <main>{children}</main>
+
     </>
   );
 };
