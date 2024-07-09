@@ -9,7 +9,7 @@ import twitter from '../../Images/twitter.png';
 import linkedin from '../../Images/linkedin.png';
 import instagram from '../../Images/instagram.png';
 
-const Footer = ({  }) => {
+const Footer = () => {
     const [email, setEmail] = useState('');
 
   const handleInputChange = (e) => {
@@ -51,7 +51,7 @@ const Footer = ({  }) => {
       <div className="social_icons">
         <p>ALL COPYRIGHT © RESERVED BY NESTOSH LLC 2024</p>
         <div className="social_icons_row">
-        <Link to="https://wa.me/1XXXXXXXXXX"><img className="img_fluid" src={whatsapp} alt="WhatsApp" /></Link>
+        <Link to="https://wa.me/923316378674"><img className="img_fluid" src={whatsapp} alt="WhatsApp" /></Link>
         <Link to="https://www.linkedin.com/company/nestosh"><img className="img_fluid" src={linkedin} alt="LinkedIn" /></Link>
         <Link to="https://www.instagram.com/nestoshllc/"><img className="img_fluid" src={instagram} alt="Instagram" /></Link>
         <Link to="https://x.com/nestosh"><img className="img_fluid" src={twitter} alt="Twitter" /></Link>

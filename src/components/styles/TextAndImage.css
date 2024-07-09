@@ -92,10 +92,15 @@
       height: auto;
   }
   .c-intro__header__title {
-    font-size: 44px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 0 10px
   }
 }
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 767px) {
+  .c-intro__header__text {
+    font-size: 14px;
+  }
   .c-intro__heading__name {
     font-size: 16px;
     margin-bottom: 20px;

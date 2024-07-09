@@ -84,52 +84,65 @@
 .services_sec .column:hover .hover_txt {
     display: block;
 }
-/* ServicesBlocks.css */
-/* .services_sec {
-    padding: 20px 0;
-  }
-  
-  .services_sec .inner_container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .ServicesBlocksContent {
-    position: relative;
-  } */
-  
-  .slick-slide {
+
+.services_sec .slick-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .slick-dots li button:before {
-    color: #000; /* Change to your preferred color */
-  }
-  
-  .slick-prev, .slick-next {
-    color: #000; /* Change to your preferred color */
-  }
-  
-  @media (min-width: 768px) {
+}
+
+.slick-dots li button:before {
+    color: #000;
+}
+
+.slick-prev,
+.slick-next {
+    color: #000;
+    width: 34px;
+    height: 34px;
+}
+
+.services_sec .row .slick-prev {
+    left: 0;
+}
+
+.services_sec .row .slick-next {
+    right: 0;
+}
+
+.slick-next:before {
+    content: '>';
+}
+
+.slick-prev:before {
+    content: '<';
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 34px;
+    opacity: 1;
+    color: #000;
+    font-family: fantasy;
+}
+
+@media (min-width: 768px) {
     .slick-slider {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media (max-width: 767px) {
-    .ServicesBlocksContent {
-      display: block;
-    }
-  }
-  
+}
+
+
 
 @media only screen and (max-width: 767px) {
 
     .services_sec h3,
     .ourwork_sec h3 {
         font-size: 44px;
+    }
+
+    .ServicesBlocksContent {
+        display: block;
     }
 
     .services_sec p,
@@ -142,18 +155,21 @@
     .services_sec .row {
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin: 0;
     }
 
     .services_sec .column {
         flex: 1 1 100%;
         padding: 30px 25px 30px !important;
-        margin: 0 15px 20px;
+        margin: 0 40px 20px;
         height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .services_sec .column img {
-        max-width: 250px;
-        /* height: 120px; */
+        max-width: 180px;
         margin: 40px auto 0;
     }
 
@@ -161,7 +177,8 @@
         font-size: 35px;
         margin: 0 0 20px;
     }
+
     .services_sec {
-        padding: 0 0 40px 0;
+        padding: 0 20px 20px;
     }
 }

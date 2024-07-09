@@ -18,7 +18,7 @@ const Work = ({ blok }) => {
             ))}
         </div>
         <div class="button">
-            <a href="#">View All</a>
+            <a href="/view-all">View All</a>
         </div>
 
     </div>

@@ -15,7 +15,9 @@ const StoryblokPage = ({ slug }) => {
 
 const DynamicPage = () => {
   const { slug } = useParams();
+  return <StoryblokPage slug={slug} />;
 };
+
 
 const App = () => {
   return (

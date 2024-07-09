@@ -3,8 +3,8 @@ import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './styles/ServicesBlocks.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/ServicesBlocks.css';
 
 const Services = ({ blok }) => {
     const [isMobile, setIsMobile] = useState(false);
