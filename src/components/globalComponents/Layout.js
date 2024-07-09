@@ -6,9 +6,6 @@ import hamburger from './../../Images/hamburger-icon.png'
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
-  const logo = logoImage;
-
-
   return (
     <>
       <Header logo={logoImage} megamenuImage={megamenuImage} hamburger={hamburger} />
