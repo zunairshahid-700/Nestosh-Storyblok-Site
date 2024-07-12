@@ -1,45 +1,76 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/header.css';
 
-const Header = ({ menus, logo, megamenuImage, hamburger }) => {
+const Header = ({ menus, logo, megamenuImage, hamburger, hamburgerWhite, whiteLogo }) => {
+  const location = useLocation();
+  const isHomepage = location.pathname === '/';
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setIsScrolled(true);
+        console.log("log skldjasldjlj");
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    if (!isHomepage) {
+      window.addEventListener('scroll', handleScroll);
+      console.log("ot needs to work");
+    }
+    // window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="c-site-header">
+    // <header className={`c-site-header ${!isHomepage ? 'lp-header' : ''} ${isScrolled ? '' : 'lp-header'}`}>
+    // <header className={`c-site-header ${isHomepage ? '' : 'lp-header'} ${!isHomepage && isScrolled ? '' : 'lp-header'}`}>
+    <header className={`c-site-header ${isHomepage ? '' : (isScrolled ? 'scrolled' : 'lp-header')}`}>
       <nav className="c-site-header__navbar navbar navbar-expand-lg">
         <div className="container">
-          <button 
-            className="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <img className="navbar-toggler-icon" src={hamburger} alt="Toggle" />
+            <img className="navbar-toggler-icon lp-logo-none" src={hamburger} alt="Toggle" />
+            <img className="navbar-toggler-icon lp-logo-block" src={hamburgerWhite} alt="toggle" />
           </button>
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand lp-logo-none" to="/">
             {logo ? (
-              <>
-                <img src={logo} alt="logo" className="c-site-header__logo d-lg-none" />
-                <img src={logo} alt="logo" className="c-site-header__logo d-none d-lg-block" />
-              </>
+              <img src={logo} alt="logo" className="c-site-header__logo" />
+            ) : (
+              <span>No Logo Available</span>
+            )}
+          </Link>
+          <Link className="navbar-brand lp-logo-block" to="/">
+            {whiteLogo ? (
+              <img src={whiteLogo} alt="logo" className="c-site-header__logo" />
             ) : (
               <span>No Logo Available</span>
             )}
           </Link>
           <Link to="#" className="btn-primary d-block d-lg-none">Let's Talk</Link>
           <div className="collapse navbar-collapse justify-content-lg-center" id="navbarSupportedContent">
-            <button 
-              className="btn-close-custom d-lg-none" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarSupportedContent" 
-              aria-controls="navbarSupportedContent" 
-              aria-expanded="false" 
+            <button
+              className="btn-close-custom d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
               aria-label="Close navigation"
             >
               &times;
@@ -68,7 +99,7 @@ const Header = ({ menus, logo, megamenuImage, hamburger }) => {
                     </div>
                     <div className="col-12 col-lg-5">
                       <div className="dropdown-item-wrap">
-                        <Link className="dropdown-item" to="#">About</Link>
+                        <Link className="dropdown-item" to="/about">About</Link>
                         <Link className="dropdown-item" to="#">Work</Link>
                         <Link className="dropdown-item" to="#">Get In Touch</Link>
                         <Link className="dropdown-item" to="#">Get In Touch</Link>
