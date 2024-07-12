@@ -18,6 +18,10 @@ import Services from "./components/Services";
 import ServicesBlocks from "./components/ServicesBlocks";
 import Work from "./components/Work";
 import WorkImages from "./components/WorkImages";
+import Banner from './components/Banner';
+import TextContent from './components/TextContent';
+import Team from './components/Team';
+import TeamBlocks from './components/TeamBlocks';
 
 storyblokInit({
   accessToken: "62wiGQO1wlQ8aYp58nPybwtt",
@@ -33,6 +37,10 @@ storyblokInit({
     ServicesBlocks: ServicesBlocks,
     Work: Work,
     WorkImages: WorkImages,
+    banner: Banner,
+    TextContent: TextContent,
+    Team: Team,
+    TeamBlocks: TeamBlocks,
     page: Page,
     teaser: Teaser,
     grid: Grid,

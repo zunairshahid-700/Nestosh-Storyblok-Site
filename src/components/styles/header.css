@@ -110,6 +110,29 @@
   height: 20px;
   width: 20px;
 }
+.c-site-header .lp-logo-none {
+  display: block;
+}
+.c-site-header .lp-logo-block {
+  display: none;
+}
+
+.c-site-header.lp-header {
+  background-color: transparent;
+}
+.c-site-header.lp-header .c-site-header__navbar {
+  background-color: transparent;
+}
+.c-site-header.lp-header .lp-logo-none {
+  display: none;
+}
+.c-site-header.lp-header .lp-logo-block {
+  display: block;
+}
+.c-site-header.lp-header .c-site-header__navbar .nav-item .nav-link {
+  color: #fff;
+  font-weight: 300;
+}
 @media only screen and (max-width: 991.98px) {
   .c-site-header__navbar .nav-item .nav-link.dropdown-toggle::after {
       filter: brightness(0) invert(1);

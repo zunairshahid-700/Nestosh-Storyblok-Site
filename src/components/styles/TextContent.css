@@ -1,0 +1,39 @@
+.c-info {
+    padding: 80px 0;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c-info {
+      padding: 40px 0;
+    }
+  }
+  .c-info__title {
+    color: #191919;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: normal;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c-info__title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  }
+  .c-info__text {
+    color: #191919;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c-info__text {
+      font-size: 18px;
+      line-height: 34px;
+      margin-bottom: 15px;
+    }
+  }

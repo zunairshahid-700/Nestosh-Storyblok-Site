@@ -1,0 +1,40 @@
+.c-banner {
+    margin-top: -202.85px;
+    position: relative;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c-banner {
+      margin-top: -66px;
+    }
+  }
+  .c-banner__image {
+    margin: 0;
+  }
+  .c-banner__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  .c-banner__wrap {
+    position: absolute;
+    top: 73%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .c-banner__wrap__title {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: normal;
+    position: relative;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .c-banner__wrap__title {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+  }
