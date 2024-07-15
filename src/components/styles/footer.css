@@ -1,8 +1,9 @@
 .footer {
     background: #e7e7e7;
     padding: 60px 0;
-    width: 100vw;
+    width: 100%;
     margin-left: calc(-50vw + 50%);
+    margin-top: auto;
   }
   .footer_container {
     width: 100%;
@@ -94,7 +95,6 @@
     object-fit: contain;
     margin: 12px 16px;
   }
-
 
   @media only screen and (max-width: 767px) {
     .footer {
