@@ -18,9 +18,9 @@ const Team = ({ blok }) => {
                 </div>
             </div>
             <div class="c-team__btn-holder">
-                {/* <a class="c-team__btn-holder__btn btn-primary">
-                    View our team
-                </a> */}
+                <a class="c-team__btn-holder__btn btn-primary">
+                    VIEW OUR TEAM
+                </a>
             </div>
         </div>
     </div>

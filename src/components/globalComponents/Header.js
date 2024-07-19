@@ -31,8 +31,6 @@ const Header = ({ menus, logo, megamenuImage, hamburger, hamburgerWhite, whiteLo
   }, []);
 
   return (
-    // <header className={`c-site-header ${!isHomepage ? 'lp-header' : ''} ${isScrolled ? '' : 'lp-header'}`}>
-    // <header className={`c-site-header ${isHomepage ? '' : 'lp-header'} ${!isHomepage && isScrolled ? '' : 'lp-header'}`}>
     <header className={`c-site-header ${isHomepage ? '' : (isScrolled ? 'scrolled' : 'lp-header')}`}>
       <nav className="c-site-header__navbar navbar navbar-expand-lg">
         <div className="container">

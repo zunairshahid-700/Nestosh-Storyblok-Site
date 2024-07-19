@@ -103,7 +103,7 @@
 .c-site-header__navbar .nav-item .nav-link.dropdown-toggle::after {
   border: 0;
   content: "";
-  /* background-image: url('../images/down-arrow.png'); */
+  background-image: url('./../../Images/down-arrow.png');
   background-size: cover;
   position: absolute;
   top: 42%;
